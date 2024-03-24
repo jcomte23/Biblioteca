@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Libro";
+}
+
+@section Scripts {
+    <script src="~/js/ConfiguracionCalendarioLibros.js" asp-append-version="true"></script>
+}
+
+<section class="vh-100">
+    <article class="d-flex justify-content-between align-items-center">
+        <h1>Registrar libro</h1>
+        <a class="btn btn-primary text-capitalize" role="button" asp-area="" asp-controller="Libro" asp-action="Index">volver</a>
+    </article>
+    <form class="row g-3 text-capitalize">
+        <div class="col-md-6">
+            <label for="titulo" class="form-label">titulo</label>
+            <input type="text" class="form-control" id="titulo">
+        </div>
+        <div class="col-md-6">
+            <label for="autor" class="form-label">autor</label>
+            <input type="text" class="form-control" id="autor">
+        </div>
+        <div class="col-md-4">
+            <label for="genero" class="form-label">genero</label>
+            <input type="text" class="form-control" id="genero">
+        </div>
+        <div class="col-md-4">
+            <label for="fechaDePublicacion" class="form-label">fecha de publicacion</label>
+            <input type="date" class="form-control" id="fechaDePublicacion" max="" min="1000-01-01" value="">
+        </div>
+        <div class="col-md-4">
+            <label for="copiasDisponibles" class="form-label">Copias disponibles</label>
+            <input type="number" class="form-control" id="copiasDisponibles" min="1">
+        </div>
+        <div class="d-flex justify-content-center gap-2">
+            <button type="submit" class="btn btn-success text-capitalize">guardar</button>
+            <button type="reset" class="btn btn-danger text-capitalize">cancelar</button>
+        </div>
+    </form>
+</section>
