@@ -1,3 +1,30 @@
 ﻿@{
     ViewData["Title"] = "Libro";
 }
+
+<table class="table text-capitalize">
+    <thead>
+        <tr>
+            <th scope="col">titulo</th>
+            <th scope="col">autor</th>
+            <th scope="col">género</th>
+            <th scope="col">Año de publicacion</th>
+            <th scope="col">copias disponibles</th>
+            <th scope="col" class="text-center">operaciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">cien años de soledad</th>
+            <td>gabriel garcía márquez</td>
+            <td>novela</td>
+            <td>1967</td>
+            <td>10</td>
+            <td class="text-center">
+                <a class="btn btn-info text-capitalize" role="button" asp-area="" asp-controller="Home" asp-action="Index">detalles</a>
+                <a class="btn btn-warning text-capitalize" role="button" asp-area="" asp-controller="Home" asp-action="Index">editar</a>
+                <a class="btn btn-danger text-capitalize" role="button" asp-area="" asp-controller="Home" asp-action="Index">eliminar</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
