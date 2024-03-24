@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home";
 }
 
 <section>
@@ -15,30 +15,18 @@
     <div class="row g-5">
         <div class="col-md-6">
             <h2 class="text-body-emphasis">Usuarios</h2>
-            <p>Gestionar las cuentas de usuarios de manera fácil y rápida. Desde aquí, podrás actualizar la información personal de los usuarios de la biblioteca</p>
+            <p>Administra las cuentas de usuarios de manera rápida y sencilla. Desde esta sección, puedes actualizar la información personal de los usuarios de la biblioteca.</p>
             <ul class="list-unstyled ps-0">
                 <li>
-                    <a class="icon-link mb-1" href="https://github.com/twbs/examples/tree/main/icons-font" rel="noopener" target="_blank">
-                        <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle" /></svg>
-                        Bootstrap npm starter
+                    <a class="icon-link mb-1 text-decoration-none" asp-area="" asp-controller="Home" asp-action="Index">
+                        <i class="bi bi-arrow-right-circle-fill"></i>
+                        Registrar un nuevo usuario
                     </a>
                 </li>
                 <li>
-                    <a class="icon-link mb-1" href="https://github.com/twbs/examples/tree/main/parcel" rel="noopener" target="_blank">
-                        <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle" /></svg>
-                        Bootstrap Parcel starter
-                    </a>
-                </li>
-                <li>
-                    <a class="icon-link mb-1" href="https://github.com/twbs/examples/tree/main/vite" rel="noopener" target="_blank">
-                        <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle" /></svg>
-                        Bootstrap Vite starter
-                    </a>
-                </li>
-                <li>
-                    <a class="icon-link mb-1" href="https://github.com/twbs/examples/tree/main/webpack" rel="noopener" target="_blank">
-                        <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle" /></svg>
-                        Bootstrap Webpack starter
+                    <a class="icon-link mb-1 text-decoration-none" asp-area="" asp-controller="Home" asp-action="Index">
+                        <i class="bi bi-arrow-right-circle-fill"></i>
+                        Ver la lista de usuarios
                     </a>
                 </li>
             </ul>
@@ -46,36 +34,18 @@
 
         <div class="col-md-6">
             <h2 class="text-body-emphasis">Libros</h2>
-            <p>Read more detailed instructions and documentation on using or contributing to Bootstrap.</p>
+            <p>Gestiona tus libros de manera rápida y sencilla. Desde esta sección, puedes llevar a cabo todas las operaciones relacionadas con el manejo de tu colección de libros.</p>
             <ul class="list-unstyled ps-0">
                 <li>
-                    <a class="icon-link mb-1" href="../getting-started/introduction/">
-                        <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle" /></svg>
-                        Bootstrap quick start guide
+                    <a class="icon-link mb-1 text-decoration-none" asp-area="" asp-controller="Home" asp-action="Index">
+                        <i class="bi bi-arrow-right-circle-fill"></i>
+                        Registrar un nuevo libro
                     </a>
                 </li>
                 <li>
-                    <a class="icon-link mb-1" href="../getting-started/webpack/">
-                        <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle" /></svg>
-                        Bootstrap Webpack guide
-                    </a>
-                </li>
-                <li>
-                    <a class="icon-link mb-1" href="../getting-started/parcel/">
-                        <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle" /></svg>
-                        Bootstrap Parcel guide
-                    </a>
-                </li>
-                <li>
-                    <a class="icon-link mb-1" href="../getting-started/vite/">
-                        <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle" /></svg>
-                        Bootstrap Vite guide
-                    </a>
-                </li>
-                <li>
-                    <a class="icon-link mb-1" href="../getting-started/contribute/">
-                        <svg class="bi" width="16" height="16"><use xlink:href="#arrow-right-circle" /></svg>
-                        Contributing to Bootstrap
+                    <a class="icon-link mb-1 text-decoration-none" asp-area="" asp-controller="Home" asp-action="Index">
+                        <i class="bi bi-arrow-right-circle-fill"></i>
+                        Ver la lista de libros
                     </a>
                 </li>
             </ul>
