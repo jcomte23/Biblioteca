@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Libro";
+}
+<section class="d-flex justify-content-between align-items-center">
+    <h1>Confirmar peticion</h1>
+    <a class="btn btn-primary text-capitalize" role="button" asp-area="" asp-controller="Libro" asp-action="Index">volver</a>
+</section>
+
+<section class="text-center py-5 container">
+    <h2>El libro <span class="text-capitalize">"cien años de soledad"</span> sera eliminado de la base de datos, ¿Estas seguro?</h2>
+    <br/>
+    <a class="btn btn-success text-capitalize rounded" role="button" asp-area="" asp-controller="Libro" asp-action="Index">Eliminar</a>
+    <a class="btn btn-danger text-capitalize rounded" role="button" asp-area="" asp-controller="Libro" asp-action="Index">Cancelar</a>
+</section>
