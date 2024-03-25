@@ -11,6 +11,12 @@ namespace Biblioteca.Controllers
             return View();
         }
 
+        // GET: LibroController/Details/5
+        public ActionResult Details(int id)
+        {
+            return View();
+        }
+
         // GET: LibroController/Create
         public ActionResult Create()
         {
