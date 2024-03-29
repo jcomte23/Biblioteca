@@ -1,0 +1,187 @@
+﻿@{
+    ViewData["Title"] = "Usuario";
+}
+
+<section>
+    <article class="d-flex justify-content-between">
+        <form class="d-flex " role="search">
+            <input class="form-control me-2" type="search" placeholder="Nombre completo, correo ..." aria-label="Search">
+            <button class="btn btn-outline-success d-flex" type="submit"><i class="bi bi-search me-2"></i>Buscar</button>
+        </form>
+        <div>
+            <a class="btn btn-primary text-capitalize" role="button" asp-area="" asp-controller="Usuario" asp-action="Create">nuevo</a>
+        </div>
+    </article>
+</section>
+
+<section class="table-responsive-sm">
+    <table class="table table-striped table-hover align-middle caption-top text-capitalize">
+        <caption>Lista de usuarios</caption>
+        <thead>
+            <tr>
+                <th scope="col">nombre completo</th>
+                <th scope="col">direccion</th>
+                <th scope="col">correo</th>
+                <th scope="col">telefono</th>
+                <th scope="col">telefono de respaldo</th>
+                <th scope="col" class="text-center">operaciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">javier cómbita téllez</th>
+                <td>CL 49 # 50-46</td>
+                <td>jcomte23@outlook.com</td>
+                <td>(+57) 313 695 40 17</td>
+                <td>(+57) 320 346 16 64</td>
+                <td class="text-center">
+                    <div class="btn-group gap-2">
+                        <a class="btn btn-info text-capitalize rounded" role="button" asp-area="" asp-controller="Usuario" asp-action="Details">detalles</a>
+                        <a class="btn btn-warning text-capitalize rounded" role="button" asp-area="" asp-controller="Usuario" asp-action="Edit">editar</a>
+                        <a class="btn btn-danger text-capitalize rounded" role="button" asp-area="" asp-controller="Usuario" asp-action="Delete">eliminar</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">María López</th>
+                <td>Calle 25 # 35-20</td>
+                <td>marial@example.com</td>
+                <td>(+57) 301 234 56 78</td>
+                <td>(+57) 315 876 54 32</td>
+                <td class="text-center">
+                    <div class="btn-group gap-2">
+                        <a class="btn btn-info text-capitalize rounded" role="button" asp-area="" asp-controller="Usuario" asp-action="Details">detalles</a>
+                        <a class="btn btn-warning text-capitalize rounded" role="button" asp-area="" asp-controller="Usuario" asp-action="Edit">editar</a>
+                        <a class="btn btn-danger text-capitalize rounded" role="button" asp-area="" asp-controller="Usuario" asp-action="Delete">eliminar</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Pedro García</th>
+                <td>Av. Principal # 10-15</td>
+                <td>pedrog@example.com</td>
+                <td>(+57) 305 345 67 89</td>
+                <td>(+57) 300 654 32 10</td>
+                <td class="text-center">
+                    <div class="btn-group gap-2">
+                        <a class="btn btn-info text-capitalize rounded" role="button" asp-area="" asp-controller="Usuario" asp-action="Details">detalles</a>
+                        <a class="btn btn-warning text-capitalize rounded" role="button" asp-area="" asp-controller="Usuario" asp-action="Edit">editar</a>
+                        <a class="btn btn-danger text-capitalize rounded" role="button" asp-area="" asp-controller="Usuario" asp-action="Delete">eliminar</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Ana Martínez</th>
+                <td>Carrera 30 # 40-50</td>
+                <td>anam@example.com</td>
+                <td>(+57) 310 123 45 67</td>
+                <td>(+57) 304 987 65 43</td>
+                <td class="text-center">
+                    <div class="btn-group gap-2">
+                        <a class="btn btn-info text-capitalize rounded" role="button" asp-area="" asp-controller="Usuario" asp-action="Details">detalles</a>
+                        <a class="btn btn-warning text-capitalize rounded" role="button" asp-area="" asp-controller="Usuario" asp-action="Edit">editar</a>
+                        <a class="btn btn-danger text-capitalize rounded" role="button" asp-area="" asp-controller="Usuario" asp-action="Delete">eliminar</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Luisa Rodríguez</th>
+                <td>Diagonal 15 # 20-10</td>
+                <td>luisar@example.com</td>
+                <td>(+57) 318 345 67 89</td>
+                <td>(+57) 311 654 32 10</td>
+                <td class="text-center">
+                    <div class="btn-group gap-2">
+                        <a class="btn btn-info text-capitalize rounded" role="button" asp-area="" asp-controller="Usuario" asp-action="Details">detalles</a>
+                        <a class="btn btn-warning text-capitalize rounded" role="button" asp-area="" asp-controller="Usuario" asp-action="Edit">editar</a>
+                        <a class="btn btn-danger text-capitalize rounded" role="button" asp-area="" asp-controller="Usuario" asp-action="Delete">eliminar</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Juan Pérez</th>
+                <td>Transversal 5 # 10-5</td>
+                <td>juanp@example.com</td>
+                <td>(+57) 301 222 33 44</td>
+                <td>(+57) 310 555 66 77</td>
+                <td class="text-center">
+                    <div class="btn-group gap-2">
+                        <a class="btn btn-info text-capitalize rounded" role="button" asp-area="" asp-controller="Usuario" asp-action="Details">detalles</a>
+                        <a class="btn btn-warning text-capitalize rounded" role="button" asp-area="" asp-controller="Usuario" asp-action="Edit">editar</a>
+                        <a class="btn btn-danger text-capitalize rounded" role="button" asp-area="" asp-controller="Usuario" asp-action="Delete">eliminar</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Carolina Ruiz</th>
+                <td>Calle 40 # 30-25</td>
+                <td>carolinar@example.com</td>
+                <td>(+57) 315 111 22 33</td>
+                <td>(+57) 301 999 88 77</td>
+                <td class="text-center">
+                    <div class="btn-group gap-2">
+                        <a class="btn btn-info text-capitalize rounded" role="button" asp-area="" asp-controller="Usuario" asp-action="Details">detalles</a>
+                        <a class="btn btn-warning text-capitalize rounded" role="button" asp-area="" asp-controller="Usuario" asp-action="Edit">editar</a>
+                        <a class="btn btn-danger text-capitalize rounded" role="button" asp-area="" asp-controller="Usuario" asp-action="Delete">eliminar</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Andrés Gómez</th>
+                <td>Av. Libertador # 25-30</td>
+                <td>andresg@example.com</td>
+                <td>(+57) 312 444 55 66</td>
+                <td>(+57) 301 777 88 99</td>
+                <td class="text-center">
+                    <div class="btn-group gap-2">
+                        <a class="btn btn-info text-capitalize rounded" role="button" asp-area="" asp-controller="Usuario" asp-action="Details">detalles</a>
+                        <a class="btn btn-warning text-capitalize rounded" role="button" asp-area="" asp-controller="Usuario" asp-action="Edit">editar</a>
+                        <a class="btn btn-danger text-capitalize rounded" role="button" asp-area="" asp-controller="Usuario" asp-action="Delete">eliminar</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Sofía Díaz</th>
+                <td>Carrera 12 # 15-10</td>
+                <td>sofiad@example.com</td>
+                <td>(+57) 317 888 99 00</td>
+                <td>(+57) 305 666 77 88</td>
+                <td class="text-center">
+                    <div class="btn-group gap-2">
+                        <a class="btn btn-info text-capitalize rounded" role="button" asp-area="" asp-controller="Usuario" asp-action="Details">detalles</a>
+                        <a class="btn btn-warning text-capitalize rounded" role="button" asp-area="" asp-controller="Usuario" asp-action="Edit">editar</a>
+                        <a class="btn btn-danger text-capitalize rounded" role="button" asp-area="" asp-controller="Usuario" asp-action="Delete">eliminar</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Carlos Vargas</th>
+                <td>Diagonal 30 # 25-20</td>
+                <td>carlosv@example.com</td>
+                <td>(+57) 314 123 45 67</td>
+                <td>(+57) 300 987 65 43</td>
+                <td class="text-center">
+                    <div class="btn-group gap-2">
+                        <a class="btn btn-info text-capitalize rounded" role="button" asp-area="" asp-controller="Usuario" asp-action="Details">detalles</a>
+                        <a class="btn btn-warning text-capitalize rounded" role="button" asp-area="" asp-controller="Usuario" asp-action="Edit">editar</a>
+                        <a class="btn btn-danger text-capitalize rounded" role="button" asp-area="" asp-controller="Usuario" asp-action="Delete">eliminar</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">Laura Martínez</th>
+                <td>Calle 50 # 40-30</td>
+                <td>lauram@example.com</td>
+                <td>(+57) 300 111 22 33</td>
+                <td>(+57) 305 999 88 77</td>
+                <td class="text-center">
+                    <div class="btn-group gap-2">
+                        <a class="btn btn-info text-capitalize rounded" role="button" asp-area="" asp-controller="Usuario" asp-action="Details">detalles</a>
+                        <a class="btn btn-warning text-capitalize rounded" role="button" asp-area="" asp-controller="Usuario" asp-action="Edit">editar</a>
+                        <a class="btn btn-danger text-capitalize rounded" role="button" asp-area="" asp-controller="Usuario" asp-action="Delete">eliminar</a>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>

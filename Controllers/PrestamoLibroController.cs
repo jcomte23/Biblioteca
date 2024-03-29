@@ -3,27 +3,27 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Biblioteca.Controllers
 {
-    public class UserController : Controller
+    public class PrestamoLibroController : Controller
     {
-        // GET: UserController
+        // GET: PrestamoLibroController
         public ActionResult Index()
         {
             return View();
         }
 
-        // GET: UserController/Details/5
+        // GET: PrestamoLibroController/Details/5
         public ActionResult Details(int id)
         {
             return View();
         }
 
-        // GET: UserController/Create
+        // GET: PrestamoLibroController/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: UserController/Create
+        // POST: PrestamoLibroController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(IFormCollection collection)
@@ -38,13 +38,13 @@ namespace Biblioteca.Controllers
             }
         }
 
-        // GET: UserController/Edit/5
+        // GET: PrestamoLibroController/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: UserController/Edit/5
+        // POST: PrestamoLibroController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Edit(int id, IFormCollection collection)
@@ -59,13 +59,13 @@ namespace Biblioteca.Controllers
             }
         }
 
-        // GET: UserController/Delete/5
+        // GET: PrestamoLibroController/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: UserController/Delete/5
+        // POST: PrestamoLibroController/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, IFormCollection collection)

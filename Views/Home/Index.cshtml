@@ -7,7 +7,7 @@
     <p class="fs-5 col-md-8">Sistema de gestión para bibliotecas que permite administrar eficazmente su colección de libros, así como realizar un seguimiento de los usuarios y los préstamos de libros.</p>
 
     <div class="mb-5">
-        <a href="../examples/" class="btn btn-primary btn-lg px-4">Nuevo prestamo</a>
+        <a class="btn btn-primary btn-lg px-4" asp-area="" asp-controller="PrestamoLibro" asp-action="Create">Nuevo prestamo</a>
     </div>
 
     <hr>
@@ -18,13 +18,13 @@
             <p>Administra las cuentas de usuarios de manera rápida y sencilla. Desde esta sección, puedes actualizar la información personal de los usuarios de la biblioteca.</p>
             <ul class="list-unstyled ps-0">
                 <li>
-                    <a class="icon-link mb-1 text-decoration-none" asp-area="" asp-controller="Home" asp-action="Index">
+                    <a class="icon-link mb-1 text-decoration-none" asp-area="" asp-controller="Usuario" asp-action="Create">
                         <i class="bi bi-arrow-right-circle-fill"></i>
                         Registrar un nuevo usuario
                     </a>
                 </li>
                 <li>
-                    <a class="icon-link mb-1 text-decoration-none" asp-area="" asp-controller="Home" asp-action="Index">
+                    <a class="icon-link mb-1 text-decoration-none" asp-area="" asp-controller="Usuario" asp-action="Index">
                         <i class="bi bi-arrow-right-circle-fill"></i>
                         Ver la lista de usuarios
                     </a>
